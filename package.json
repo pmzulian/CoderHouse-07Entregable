@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/pmzulian/CoderHouse-07Entregable/issues"
   },
-  "homepage": "https://github.com/pmzulian/CoderHouse-07Entregable#readme"
+  "homepage": "https://github.com/pmzulian/CoderHouse-07Entregable#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
