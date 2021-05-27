@@ -1,0 +1,19 @@
+{
+  "name": "07-desafio-entregable",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmzulian/CoderHouse-07Entregable.git"
+  },
+  "author": "Pablo ZULIAN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pmzulian/CoderHouse-07Entregable/issues"
+  },
+  "homepage": "https://github.com/pmzulian/CoderHouse-07Entregable#readme"
+}
