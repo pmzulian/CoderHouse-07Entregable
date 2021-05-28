@@ -19,15 +19,21 @@ app.get("/", (peticion, respuesta) => {
     respuesta.send("Mensaje de respuesta directorio raíz");
 })
 
+// const ruta =
+//   "C:\\Users\\pmzul\\OneDrive\\Documents\\CoderHouse-Node\\7. NPM e introducción a express\\07-desafio-entregable\\productos.txt";
+
+const ruta = "./07-desafio-entregable/productos.txt";
+
 const productos = () => {
   try {
-    return JSON.parse(fs.readFileSync("productos.txt", "utf-8"));
+    return JSON.parse(fs.readFileSync(ruta, "utf-8"));
   } catch (error) {
     return `Error de lectura ${error}`;
   }
 };
 
 const items = productos().map(element => element.title)
+console.log(items);
 const prod = productos();
 const cantidad = productos().length;
 
