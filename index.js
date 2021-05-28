@@ -28,10 +28,16 @@ const productos = () => {
   try {
     return JSON.parse(fs.readFileSync(ruta, "utf-8"));
   } catch (error) {
-    return `Error de lectura ${error}`;
+    console.log("Error al leer el archivo: " + error);
+    return [];
   }
 };
 
+/**
+ * Al hacer un map sobre la salida del método readFile, necesito añadir
+ * un arreglo vacío en caso de error, porque si se produce, entra al bloque
+ * catch y no tiene arreglo para aplicar el método map().
+ */
 const items = productos().map(element => element.title)
 console.log(items);
 const prod = productos();
